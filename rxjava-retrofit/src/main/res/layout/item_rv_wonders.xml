@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_wonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/colorBG"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        app:cardBackgroundColor="@color/colorTxtSec"
+        app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+        <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorTxtSec"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_left_lable"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="@color/colorTxtPri"
+                    android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

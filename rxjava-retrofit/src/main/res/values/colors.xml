@@ -5,4 +5,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="colorBG">#ffffff</color>
+    <color name="colorTxtPri">#212121</color>
+    <color name="colorTxtSec">#f7f7f7</color>
+    <color name="colorWhite">#ffffff</color>
+
 </resources>
