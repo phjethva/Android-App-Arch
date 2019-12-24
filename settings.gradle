@@ -1,0 +1,2 @@
+include ':rxjava-retrofit', ':mvvm-rxjava-retrofit', ':mvvm-dagger-rxjava-retrofit'
+rootProject.name='AndroidApp Arch'
