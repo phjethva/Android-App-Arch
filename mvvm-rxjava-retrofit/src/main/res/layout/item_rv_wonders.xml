@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data class="WonderAdapterBinding">
+
+        <import type="android.content.Context" />
+
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+
+        <variable
+            name="mainViewModel"
+            type="com.phjethva.mvvm_rx.ui.activity.main.MainViewModel" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_wonder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="@color/colorBG"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+        app:cardBackgroundColor="@color/colorTxtSec"
+        app:cardCornerRadius="5dp"
+        android:onClick="@{()->mainViewModel.onItemClickListen(position)}">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                bind:imageUrl="@{mainViewModel.getWonder(position).imageUrl}" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dp"
+                    android:text="@{mainViewModel.getWonder(position).name}"
+                    android:textColor="@color/colorTxtSec"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_left_label"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@{mainViewModel.getWonder(position).country}"
+                    android:textColor="@color/colorTxtPri"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

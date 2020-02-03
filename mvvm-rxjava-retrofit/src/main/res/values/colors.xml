@@ -5,4 +5,21 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
+    <color name="colorBG">#ffffff</color>
+
+    <color name="colorTxtPri">#212121</color>
+    <color name="colorTxtSec">#f7f7f7</color>
+
+    <color name="colorWhite">#ffffffff</color>
+    <color name="colorWhite1">#96ffffff</color>
+    <color name="colorWhite2">#64ffffff</color>
+    <color name="colorWhite3">#32ffffff</color>
+    <color name="colorWhite4">#16ffffff</color>
+
+    <color name="colorBlack">#ff000000</color>
+    <color name="colorBlack1">#96000000</color>
+    <color name="colorBlack2">#64000000</color>
+    <color name="colorBlack3">#32000000</color>
+    <color name="colorBlack4">#16000000</color>
+
 </resources>
