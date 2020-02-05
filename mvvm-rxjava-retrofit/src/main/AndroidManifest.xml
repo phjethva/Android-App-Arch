@@ -13,13 +13,17 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".ui.activity.main.MainActivity"
+            android:name=".ui.activity.login.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:screenOrientation="portrait"/>
 
     </application>
 

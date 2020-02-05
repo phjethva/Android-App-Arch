@@ -57,7 +57,7 @@ public class WondersRepository {
                             @Override
                             public void onError(Throwable throwable) {
                                 Log.d("TAG_API_err_0", throwable.getMessage());
-                                ToastUtils.showToast(ctx, "Error In Result.");
+                                ToastUtils.showToast(ctx, "" + throwable.getMessage());
                             }
 
                             @Override

@@ -11,9 +11,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.phjethva.mvvm_rx.R;
+import com.phjethva.mvvm_rx.data.ApiCons;
+import com.phjethva.mvvm_rx.data.model.LoginResponse;
 import com.phjethva.mvvm_rx.data.model.WondersResponse;
 import com.phjethva.mvvm_rx.data.wonder.network.WondersRepository;
 import com.phjethva.mvvm_rx.ui.adapter.WondersAdapter;
+import com.phjethva.mvvm_rx.utils.SharedPrefUtils;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -25,6 +28,8 @@ public class MainViewModel extends AndroidViewModel {
     private MutableLiveData<List<WondersResponse.DataWonders>> mutableAllWonders;
     private WondersAdapter wondersAdapter;
 
+    private LoginResponse.DataLogin login;
+
     public MainViewModel(Application application) {
         super(application);
         this.ctx = application.getApplicationContext();
@@ -34,6 +39,11 @@ public class MainViewModel extends AndroidViewModel {
     public void init() {
         wondersAdapter = new WondersAdapter(R.layout.item_rv_wonders, this);
         mutableAllWonders = new MutableLiveData<>();
+        login = SharedPrefUtils.getLogin(ctx, ApiCons.User_Info);
+    }
+
+    public LoginResponse.DataLogin getLogin() {
+        return login;
     }
 
     public WondersAdapter getWondersAdapter() {
