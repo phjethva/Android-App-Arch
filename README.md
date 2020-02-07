@@ -7,5 +7,7 @@ Module: [mvvm-rxjava-retrofit](https://github.com/phjethva/Android-App-Arch/tree
 
 Module: [mvvm-dagger-rxjava-retrofit](https://github.com/phjethva/Android-App-Arch/tree/master/mvvm-dagger-rxjava-retrofit)
 
-<img align="center" src="http://www.pjetapps.com/api-tutorials/images/github/mvvm_rxjava_retrofit/ss_login.PNG" width="250"> <img align="center" src="http://www.pjetapps.com/api-tutorials/images/github/mvvm_rxjava_retrofit/ss_main_01.PNG" width="250"> <img align="center" src="http://www.pjetapps.com/api-tutorials/images/github/mvvm_rxjava_retrofit/ss_main_02.PNG" width="250">
+<p align="center">
+<img src="http://www.pjetapps.com/api-tutorials/images/github/mvvm_rxjava_retrofit/ss_login.PNG" width="250"> <img src="http://www.pjetapps.com/api-tutorials/images/github/mvvm_rxjava_retrofit/ss_main_01.PNG" width="250"> <img src="http://www.pjetapps.com/api-tutorials/images/github/mvvm_rxjava_retrofit/ss_main_02.PNG" width="250">
+</p>
 
